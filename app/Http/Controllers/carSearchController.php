@@ -47,7 +47,6 @@ class carSearchController extends Controller
         // Include any additional query parameters in the pagination links
         $cars->appends($request->except('page'));
 
-
         return view('cars.searchedCars', compact('cars'));
     }
 }

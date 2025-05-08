@@ -11,6 +11,7 @@ use App\Http\Controllers\addNewAdminController;
 use App\Http\Controllers\invoiceController;
 use App\Http\Controllers\AdminAuth\LoginController;
 use App\Http\Controllers\carSearchController;
+use App\Http\Controllers\AboutController;
 use App\Models\User;
 use App\Models\Car;
 use App\Models\Reservation;
@@ -21,6 +22,8 @@ Route::get('/', function () {
     $cars = Car::take(6)->where('status', '=', 'available')->get();
     return view('home', compact('cars'));
 })->name('home');
+
+Route::get('/about', [AboutController::class, 'about'])->name('about');
 
 Route::get('/cars', [clientCarController::class, 'index'])->name('cars');
 Route::get('/cars/search', [carSearchController::class, 'search'])->name('carSearch');
@@ -58,10 +61,7 @@ function () {
 
 Route::prefix('admin')->middleware('admin')->group(function () {
 
-    Route::get(
-        '/dashboard',
-        adminDashboardController::class
-    )->name('adminDashboard');
+    Route::get('/dashboard',adminDashboardController::class)->name('adminDashboard');
 
     Route::resource('cars', CarController::class);
 

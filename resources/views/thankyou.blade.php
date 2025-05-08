@@ -14,7 +14,7 @@
     <div class="h-screen bg-gray-200 flex justify-center items-center ">
         <div class="bg-white md:w-3/5 h-4/5 rounded-lg mx-4 shadow-xl flex flex-col justify-start items-center gap-8">
             <div class="w-32 mt-10">
-                <img loading="lazy"  src="/images/logos/LOGO.png" alt="">
+                <img loading="lazy"  src="/images/founder.jpg" alt="">
             </div>
             <div class="">
                 <h1 class="font-car font-bold text-gray-900 text-6xl text-center">Thank You ❤️</h1>
@@ -30,7 +30,7 @@
                         present your reservation invoice (digital or printed) and then pay and get your car</p>
                     <div class="mt-2 flex justify-center">
                         <a href="{{route('invoice', ['reservation'=>$reservation->id])}}"
-                        class="w-full p-2 m-2 text-white bg-pr-400 font-semibold rounded-md hover:bg-black flex justify-center items-center gap-3">
+                        class="w-full p-2 m-2 text-white bg-blue-600 font-semibold rounded-md hover:bg-black flex justify-center items-center gap-3">
                             <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 576 512">
                                 <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
                                 <style>

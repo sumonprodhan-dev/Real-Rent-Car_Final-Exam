@@ -41,22 +41,21 @@
                                 src="{{ $reservation->car->image }}" alt="">
                         </div>
                         <div class="m-3 p-1 md:w-[500px]">
-                            <h2 class="mt-2 font-car text-gray-800 text-2xl font-medium">{{ $reservation->car->brand }}
-                                {{ $reservation->car->model }} {{ $reservation->car->engine }}</h2>
+                            <h2 class="mt-2 font-car text-gray-800 text-2xl font-medium">{{ $reservation->car->brand }} | {{ $reservation->car->model }} | {{ $reservation->car->engine }}</h2>
                             <div class="mt-4 flex justify-start md:gap-10 gap-5">
                                 <div class="flex gap-2 items-center">
                                     <p class="text-lg font-medium">From: </p>
-                                    <p class="text-pr-600 font-semibold text-lg">
-                                        {{ Carbon\Carbon::parse($reservation->start_date)->format('y-m-d') }}</p>
+                                    <p class="text-green-500 font-semibold text-lg">
+                                        {{ Carbon\Carbon::parse($reservation->start_date)->format('d-m-y') }}</p>
                                 </div>
                                 <div class="flex gap-2 items-center">
                                     <p class="text-lg font-medium">To: </p>
-                                    <p class="text-pr-600 font-semibold text-lg">
-                                        {{ Carbon\Carbon::parse($reservation->end_date)->format('y-m-d') }}</p>
+                                    <p class="text-green-500 font-semibold text-lg">
+                                        {{ Carbon\Carbon::parse($reservation->end_date)->format('d-m-y') }}</p>
                                 </div>
                                 <div class="flex gap-2 items-center">
                                     <p class="text-lg font-medium">Price: </p>
-                                    <p class="text-pr-600 font-semibold text-lg">{{ $reservation->total_price }} <span
+                                    <p class="text-green-500 font-semibold text-lg">{{ $reservation->total_price }} <span
                                             class="text-black">$</span> </p>
                                 </div>
 

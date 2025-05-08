@@ -13,11 +13,10 @@
                     <h3 class="font-car text-gray-500 text-2xl">Price:</h3>
                     <p>
                         <span
-                            class=" text-3xl font-bold text-pr-400 ms-3 me-1 border border-pr-400 p-2 rounded-md">{{ $car->price_per_day }}
+                            class=" text-3xl font-bold text-green-500 ms-3 me-1 border border-green-500 p-2 rounded-md">{{ $car->price_per_day }}
                             $</span>
                         <span
-                            class="text-lg font-medium text-red-500 line-through">{{ intval(($car->price_per_day * 100) / (100 - $car->reduce)) }}
-                            $
+                            class="text-lg font-medium text-red-500 line-through">{{ intval(($car->price_per_day * 100) / (100 - $car->reduce)) }} $
                         </span>
                     </p>
                 </div>
@@ -35,11 +34,10 @@
                         @csrf
                         <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
 
-                            {{-- <input type="text" hidden name="user" value="{{ Auth::user()->id }}"> --}}
+                            <input type="text" hidden name="user" value="{{ Auth::user()->id }}">
 
                             <div class="sm:col-span-3">
-                                <label for="full-name" class="block text-sm font-medium leading-6 text-gray-900">Full
-                                    Name</label>
+                                <label for="full-name" class="block text-sm font-medium leading-6 text-gray-900">Full Name</label>
                                 <div class="mt-2">
                                     <input type="text" name="full-name" id="full-name" value="{{ $user->name }}"
                                         class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-pr-400 sm:text-sm sm:leading-6">
@@ -70,9 +68,7 @@
                             </div>
                         </div>
                         <div class="mt-12 md:block hidden  ">
-                            <button type="submit"
-                                class="text-white bg-pr-400 p-3 w-full rounded-lg font-bold hover:bg-black shadow-xl hover:shadow-none ">Order
-                                Now</button>
+                            <button type="submit" class="text-white bg-blue-600 p-3 w-full rounded-lg font-bold hover:bg-black shadow-xl hover:shadow-none ">Order Now</button>
                         </div>
                     </form>
                 </div>
@@ -85,12 +81,9 @@
                 <div class="relative mx-3 mt-3 flex h-[200px] w-3/4   overflow-hidden rounded-xl shadow-lg">
                     <img loading="lazy" class="h-full w-full object-cover" src="{{ $car->image }}" alt="product image" />
                     <span
-                        class="absolute w-24 h-8 py-1 top-0 left-0 m-2 rounded-full bg-pr-400 px-2 text-center text-sm font-medium text-white">{{ $car->reduce }}
-                        %
-                        OFF</span>
+                        class="absolute w-24 h-8 py-1 top-0 left-0 m-2 rounded-full bg-blue-600 px-2 text-center text-sm font-medium text-white">{{ $car->reduce }} % OFF</span>
                 </div>
-                <p class=" ms-4 max-w-full font-car text-xl mt-3 md:block hidden">{{ $car->brand }} {{ $car->model }}
-                    {{ $car->engine }}
+                <p class=" ms-4 max-w-full font-car text-xl mt-3 md:block hidden">{{ $car->brand }} {{ $car->model }} {{ $car->engine }}
                 </p>
                 <div class="mt-3 ms-4 md:block hidden">
                     <div class="flex items-center">
@@ -103,28 +96,24 @@
                             </svg>
                         @endfor
                         <span
-                            class="mr-2 ml-3 rounded bg-pr-300 px-2.5 py-0.5 text-sm font-semibold">{{ $car->stars }}.0</span>
+                            class="mr-2 ml-3 rounded bg-blue-600 text-white px-2.5 py-0.5 text-sm font-semibold">{{ $car->stars }}.0</span>
                     </div>
                 </div>
 
 
                 <div class=" w-full   mt-8 ms-8">
                     <p id="duration" class="font-car text-gray-600 text-lg ms-2">Estimated Duration: <span
-                            class="mx-2 font-car text-md font-medium text-gray-700 border border-pr-400 p-2 rounded-md "> --
-                            days</span>
+                            class="mx-2 font-car text-md font-medium text-gray-700 border border-blue-600 p-2 rounded-md "> -- days</span>
                     </p>
                 </div>
 
                 <div class=" w-full   mt-8 ms-8">
                     <p id="total-price" class="font-car text-gray-600 text-lg ms-2">Estimated Price: <span
-                            class="mx-2 font-car text-md font-medium text-gray-700 border border-pr-400 p-2 rounded-md "> --
-                            $</span>
+                            class="mx-2 font-car text-md font-medium text-gray-700 border border-blue-600 p-2 rounded-md "> -- $</span>
                     </p>
                 </div>
                 <div id="mobile_submit_button" class="mt-12 w-full md:hidden  ">
-                    <button type="submit"
-                        class="text-white bg-pr-400 p-3 w-full rounded-lg font-bold hover:bg-black shadow-xl hover:shadow-none ">Order
-                        Now</button>
+                    <button type="submit" class="text-white bg-pr-400 p-3 w-full rounded-lg font-bold hover:bg-black shadow-xl hover:shadow-none ">Order Now</button>
                 </div>
             </div>
         </div>

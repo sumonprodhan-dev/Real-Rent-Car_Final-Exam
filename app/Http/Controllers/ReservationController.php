@@ -49,7 +49,7 @@ class ReservationController extends Controller
 
         // Check if the user has more than 2 reservations
         $userReservationsCount = Reservation::where('user_id', $user->id)->count();
-        if ($userReservationsCount >= 2) {
+        if ($userReservationsCount >= 100) {
             return redirect()->back()->with('error', 'You cannot have more than 2 active reservations 😉.');
         }
 

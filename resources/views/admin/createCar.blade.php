@@ -117,7 +117,7 @@
                                     </svg>
                                     <div class="flex mt-4 text-sm leading-6 text-gray-600">
                                         <label for="file-upload"
-                                            class="relative font-semibold bg-white rounded-md cursor-pointer text-pr-400 focus-within:outline-none focus-within:ring-2 focus-within:ring-pr-400 focus-within:ring-offset-2 hover:text-pr-400">
+                                            class="relative font-semibold bg-white rounded-md cursor-pointer text-blue-600 focus-within:outline-none focus-within:ring-2 focus-within:ring-pr-400 focus-within:ring-offset-2 hover:text-pr-400">
                                             <span>Upload a file</span>
                                             <input id="file-upload" name="image" type="file" class="sr-only">
                                         </label>
@@ -152,9 +152,9 @@
 
                 <div class="flex items-center justify-center mb-6 gap-x-6">
                     <a href="{{route('cars.index')}}"
-                        class="w-20 p-1 text-sm font-semibold leading-6 text-center text-gray-900 border-2 rounded-md border-pr-200 hover:bg-white bg-sec-300">Cancel</a>
+                        class="w-20 p-1 text-sm font-semibold leading-6 text-center text-gray-900 border-2 rounded-md border-blue-600 hover:bg-white bg-sec-300">Cancel</a>
                     <button type="submit"
-                        class="w-1/3 px-3 py-2 text-sm font-semibold text-white rounded-md shadow-sm bg-pr-400 hover:bg-pr-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pr-400">Save</button>
+                        class="w-1/3 px-3 py-2 text-sm font-semibold text-white rounded-md shadow-sm bg-blue-600 hover:bg-blue-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pr-400">Save</button>
                 </div>
 
             </div>

@@ -1,66 +1,43 @@
-# Car Rental Laravel Project
+## Laravel Sponsors
 
-This is a car rental project developed for the graduation Project. It is built using the Laravel framework and provides a web application for managing car rental operations.
+We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
 
-## Live website:
+### Premium Partners
 
-- check live website [here](https://realrentcar.galdi.dev/)
-
-## Features
-
--   User Registration and Authentication
--   Car Listing and Management
--   Rental Booking and Management
--   Admin Panel for managing cars, bookings, and users
-
-
-## Interfaces:
-
-- User
-
-![Alt text](public/user_interface.gif)
-
-- Admin
-
-![Alt text](public/admin_interface.gif)
-
-
-
-
-## Installation
-
-1. Clone the repository: https://github.com/Mohamed-Galdi/RealRentCar
-
-2. Navigate to the project directory: `cd RealRentCar`
-
-3. Install the dependencies using Composer: `composer install`
-
-4. Create a copy of the `.env.example` file and rename it to `.env`. Configure the database settings in the `.env` file.
-
-<!-- 5. Generate an application key: `php artisan key:generate` -->
-
-5. Run the database migrations: `php artisan migrate`
-
-7. Seed database cars table: `php artisan db:seed --class=CarSeeder`
-
-8. Seed the database users table with a Demo admin: `php artisan db:seed --class=adminDemo` (login as admin at '/admin')
-
-9. `npm install` && `npm run dev`
-
-10. Create the symbolic link: `php artisan storage:link`
-
-11. Start the development server: `php artisan serve`
-
-12. Visit `http://localhost:8000` in your browser to access the application.
-
-## Usage
-
--   Register a user account or login with existing credentials.
--   Explore the available cars and their details.
--   Make a booking by selecting a car and providing the required information.
--   Admin users can access the admin panel by visiting `http://localhost:8000/admin` and using their credentials.
--   Admins can manage cars, bookings, and users through the admin panel.
+- **[Vehikl](https://vehikl.com/)**
+- **[Tighten Co.](https://tighten.co)**
+- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
+- **[64 Robots](https://64robots.com)**
+- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
+- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
+- **[Redberry](https://redberry.international/laravel-development/)**
+- **[Active Logic](https://activelogic.com)**
 
 ## Contributing
 
-We welcome contributions to enhance the project! If you find any issues or have suggestions, please open an issue or submit a pull request.
+Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+
+## Code of Conduct
+
+In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+
+## Security Vulnerabilities
+
+If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+
+## License
+
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+----admin-----
+gmail: sumonpro.dev@gmail.com
+pass: password
+
+
+-----user------
+gmail: user022@gmail.com
+pass: password
+
+gmail: user03@gmail.com
+pass: password

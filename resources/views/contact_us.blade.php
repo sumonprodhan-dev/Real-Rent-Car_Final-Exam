@@ -14,17 +14,17 @@
                     <div class="w-full mr-5">
                         <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">First
                             Name</label>
-                        <input type="email" id="email"
+                        <input type="text" id="text"
                             class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
-                            placeholder="Mohamed" required>
+                            placeholder="Sumon" required>
                     </div>
 
                     <div class="w-full ">
                         <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Last
                             Name</label>
-                        <input type="email" id="email"
+                        <input type="text" id="text"
                             class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
-                            placeholder="Galdi" required>
+                            placeholder="Prodhan" required>
                     </div>
                 </div>
                 <div class="flex justify-between">
@@ -33,15 +33,15 @@
                             class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Email</label>
                         <input type="email" id="email"
                             class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
-                            placeholder="contact.galdi@gmail.com" required>
+                            placeholder="sumonpro.dev@gmail.com" required>
                     </div>
 
                     <div class="w-full ">
                         <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Phone
                             Number</label>
-                        <input type="email" id="email"
+                        <input type="number" id="number"
                             class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
-                            placeholder="+212600000000" required>
+                            placeholder="+8801402042826" required>
                     </div>
                 </div>
                 <div>
@@ -65,7 +65,7 @@
                         placeholder="Leave a comment..."></textarea>
                 </div>
                 <button type="submit"
-                    class="p-3 mb-16 font-bold border rounded-md border-pr-400 text-pr-400 hover:text-white hover:bg-pr-400">Send
+                    class="p-3 mb-16 font-bold border rounded-md border-blue-600 text-blue-600 hover:text-white hover:bg-blue-600">Send
                     message</button>
             </form>
         </div>
@@ -84,8 +84,8 @@
                     </svg>
                 </div>
                 <h2 class="text-lg font-bold text-gray-800 font-car">Company information:</h2>
-                <p class="text-sm font-light text-gray-700 font-car">RealRentCar LLC</p>
-                <p class="text-sm font-light text-gray-700 font-car">Location: Morocco</p>
+                <p class="text-sm font-light text-gray-700 font-car">SMN Pro LLC</p>
+                <p class="text-sm font-light text-gray-700 font-car">Location: Bangladesh</p>
             </div>
             <div>
                 <div class="w-20 p-6 mx-auto mb-3 bg-gray-200 rounded-md ">
@@ -101,8 +101,8 @@
                     </svg>
                 </div>
                 <h2 class="text-lg font-bold text-gray-800 font-car">Address:</h2>
-                <p class="text-sm font-light text-gray-700 font-car">DR ANABDOUR AMMELEN TIZNIT</p>
-                <p class="text-sm font-light text-gray-700 font-car">Zip Code/Postal code:85450</p>
+                <p class="text-sm font-light text-gray-700 font-car">Bonarpara, Gaibandha, Bangladesh</p>
+                <p class="text-sm font-light text-gray-700 font-car">Zip Code/Postal code:5750</p>
             </div>
             <div>
                 <div class="w-20 p-6 mx-auto mb-3 bg-gray-200 rounded-md ">
@@ -121,7 +121,7 @@
                 <p class="text-sm font-light text-gray-700 font-car">Call us to speak to a member of our team. We are always
                     happy to help.
                 </p>
-                <p class="font-car text-pr-400 ">+212600000000</p>
+                <p class="font-car text-blue-600 ">+8801402042826</p>
             </div>
             <hr class="my-6  sm:mx-auto border-gray-700 lg:my-8 md:hidden" />
 
